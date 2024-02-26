@@ -8,7 +8,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'docker build -t featureImage ./exercise1'
+                sh 'docker build -t featureimage ./exercise1'
             }
         }
         stage('test') {

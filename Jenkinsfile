@@ -8,7 +8,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'docker build -t prodImage ./exercise1'
+                sh 'docker build -t prodimage ./exercise1'
             }
         }
         stage('test') {

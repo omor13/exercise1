@@ -1,14 +1,14 @@
 pipeline {
     agent any
     stages {
-        stage('clone') {
+        stage('checkout') {
             steps {
-                sh 'rm -rf exercise1'
+                sh 'echo "Branch Checkout"'
             }
         }
         stage('build') {
             steps {
-                sh 'docker build -t featureimage ./exercise1'
+                sh 'docker build -t featureimage .'
             }
         }
         stage('test') {
